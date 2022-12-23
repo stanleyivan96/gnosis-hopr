@@ -52,6 +52,9 @@ services:
       discovery.type: single-node
     networks:
       - elk
+    depends_on:
+      - execution
+      - consensus
 
   logstash:
     build:
