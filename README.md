@@ -36,9 +36,7 @@ git clone <GITHUB_HTTP>
 ```
 #### Generate JWT Secret
 ```console
-mkdir -p /home/$USER/gnosis-hopr/execution
-mkdir /home/$USER/gnosis/jwtsecret 
-mkdir /home/$USER/gnosis/consensus
+openssl rand -hex 32 | tr -d "\n" > /home/$USER/gnosis-hopr/jwtsecret/jwt.hex
 ```
 ## Usage
 ### Bringing up the stack
