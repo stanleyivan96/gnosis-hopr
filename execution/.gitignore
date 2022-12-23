@@ -1,0 +1,10 @@
+# Ignore Data Directory
+/nethermind_db
+/logs
+/keystore
+
+# Ignore OS artifacts
+**/.DS_Store
+
+
+
